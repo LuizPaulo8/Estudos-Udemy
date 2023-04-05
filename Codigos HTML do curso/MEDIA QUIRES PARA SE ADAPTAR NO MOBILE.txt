@@ -1,0 +1,26 @@
+body .full-width {
+  width: 100%; (LARGURA 100% DO BODE)
+  flex: 1 1 100%; (LARGURA DO BODY)
+
+.top3-content {
+ height: 100vh; (MUDA ESSE PRO DEBAIXO)
+  min-height: 100vh;
+
+@media (max-width: 800px) (QUANDO CHEGAR NA MEDIDA ELA QUEBRA) {
+  .intro-content, .grid {
+    grid-template-columns: 1fr; (QUEBRA EM 1 FRAGMENTO)
+  }
+
+  .gallery-img {
+    width: 100%; ()
+    max-width: 100%; (DEIXA A IMAGEM AJUSTADA NA TELA DO MOBILE )
+    max-height: 100%; ()
+  }
+
+  .gallery-img img {
+    width: 100%; (DEIXA A IMAGEM AJUSTADA NA TELA)
+  }
+
+  .grid-one-content {
+    display: block; (QUANDO ESTIVER NO MOBILE SE AJUSTA)
+  }

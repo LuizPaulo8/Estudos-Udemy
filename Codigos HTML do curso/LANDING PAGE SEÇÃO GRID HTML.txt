@@ -1,0 +1,48 @@
+<a href="#home">LOGO</a>
+<li><a href="#grid-one">grid-one</a></li>
+<li><a href="#gallery">gallery</a></li>
+
+<section id="intro" class="intro main-bg section"> (TROCA PELO DEBAIXO)
+  <section id="home" class="intro main-bg section">
+
+ <section id="top3" class="white-bg section"> (TROCA PELO DEBAIXO)
+  <section id="intro" class="white-bg section">
+
+TROCA TOP 3 JOBS POR ESSE
+
+ <h2>news coverage and some
+        surprises</h2>
+
+<section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">My Grid</h2>
+      <p class="grid-description">Uma breve descrição.</p>
+
+      <div class="grid">
+        <article>
+          <h3>Teste 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus
+          nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores
+          provident maiores.</p>
+        </article>
+        <article>
+          <h3>Teste 2</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus
+          nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores
+          provident maiores.</p>
+        </article>
+        <article>
+          <h3>Teste 2</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus
+          nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores
+          provident maiores.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section white-bg">
+    <div class="main-content">
+      <h1>teste</h1>
+    </div>
+  </section>

@@ -1,0 +1,7 @@
+.flex-container{
+display: flex; (PARA TER MAIS OPÇÕES PARA EDITAR NO CSS)
+flex-direction: row; (DEIXA A PAGINA TODA NA VERTICAL)
+flex-direction: column; (DEIXA A PAGINA TODA NA HORIZONTAL)
+justify-content: space-evenly; (ESPAÇO ENTRE OS ITENS) (SO MEXE NO EIXO VERTICAL)
+align-items: center; (DEIXA OS ITENS NO MEIO) (SO MEXE NO EIXO HORIZONTAL)
+ 

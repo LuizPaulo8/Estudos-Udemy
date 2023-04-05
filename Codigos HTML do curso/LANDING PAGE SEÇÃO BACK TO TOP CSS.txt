@@ -1,0 +1,67 @@
+.close-menu {
+  display: none; (POR FORA DO MEDIA QUIERES)
+}
+
+.back-to-top {
+  position: fixed; (PARA FICAR SEMPRE FIXADO)
+  bottom: 2rem; (PARA DEIXAR NO CENTRO)
+  right: 2rem; (PARA DEIXAR NO CENTRO)
+  background: var(--white-color); (FUNDO DO MENU)
+  width: 5rem; (LARGURA)
+  height: 5rem; (ALTURA)
+  display: flex; (AUMENTA EDIÇÕES)
+  justify-content: center; (FICA NO CENTRO)
+  align-items: center; (ALINHA OS ITENS NO CENTRO)
+  border-radius: 50%; (% DO NAV)
+  color: var(--primary-color); (COR DA LETRA)
+  transform: rotate(-90deg); (PARA VIRAR A SETINHA DO MENU)
+  border: 0.1rem solid var(--primary-color); (BORDA NO BOTÃO) (HTML PLAY CODE UNICODE)
+}
+
+ .menu {
+    bottom: 0; (TIRA A PARTE DE BAIXO)
+    text-align: center; (ALINHA NO CENTRO)
+  }
+
+  .menu-content, .menu-content ul {
+    flex-direction: column; (DEIXA ELES EM COLUNA)
+    justify-content: center; (ALINHA CONTEUDO NO CENTRO)
+  }
+
+  .menu-content {
+    height: 100vh; (TAMANHO DO CONTEÚDO NO NAVEGADOR)
+  }
+
+  .menu {
+    display: none; (SO APARECE QUANDO EU MANDAR)
+  }
+
+  .close-menu-label::after {
+    content: '☰';(PRA DEIXAR O MENU DE 3 LISTRAS DO LADP)
+    position: fixed; (POSIÇÃO FIXA)
+    z-index: 2; (PRA FICAR SOBRE O MENU)
+    top: 2rem; (PRA DEIXAR UM POUCO MAIS PRA DENTRO)
+    right: 2rem; (PRA DEIXAR UM POUCO MAIS PRA DENTRO)
+    background: var(--primary-color); (FUNDO DO MENU)
+    color: var(--white-color); (COR DA LETRA DO MENU)
+    font-size: 3rem; (TAMANHO DA FONTE)
+    line-height: 3rem; (TAMANHO DA LINHA)
+    width: 3rem; (LARGURA)
+    height: 3rem; (ALTURA)
+    text-align: center; (TEXTO NO CENTRO)
+    padding: 0.5rem; (PRA ALINHAR DENTRO DA CAIXA)
+    cursor: pointer; (MENUZINHO CLICAVEL)
+  }
+ 
+  .close-menu:checked~.menu {
+    display: block; (APERTA NO MENU E ELE SOME)
+  }
+
+  .close-menu:checked~.close-menu-label::after {
+    content: '×'; (PRA APARECER O X PARA FECHAR O MENU)
+  }
+
+  .menu-spacing {
+    display: none; (PARA NÃO APARECER)
+  }
+}

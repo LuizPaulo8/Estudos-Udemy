@@ -1,0 +1,21 @@
+transition: all 1s ease-in-out; (para fazer uma transição lenta quando passar o mouse)
+
+a:link (links nunca visitados)
+
+a:visited (links que já foram visitados)
+
+a:active (quando clicar muda a cor)
+
+input:focus (quando apertar na caixa acontece algo)
+
+input: checked + p (quando o input estiver marcado muda a cor do P)
+
+.pai .lista li:first-child (seleciona somente o primeiro item)
+
+p:not(.meio){
+TODOS OS PARAGRAAFOS QUE TIVER A CLASSE "MEIO" NAO SERAM SELECIONADOS
+}
+
+nth-child(even)ou(odd)(impares) (SELECIONA SOMENTE OS PARES)
+
+nth-child(3n+5) (começando no 5 elemento, vai pulando de 3 em 3)

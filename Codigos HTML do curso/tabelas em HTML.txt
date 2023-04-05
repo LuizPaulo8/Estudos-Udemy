@@ -1,0 +1,98 @@
+<table> (tag para criar a tabela)
+<thead> (corpo da tabela)
+<caption> (Titúlo da tabela)
+<tr> (colunas da tabela)
+<th> (Titúlos da coluna da tabela)
+
+<tbody> (conteudo da tabela)
+<tr>
+<td>
+
+<tfoot> (rodape da tabela)
+<tr>
+<td colspan='2' rowspan='2' (retira 2 linha da tabela)
+<td rowspan='2' TOTAL R$555,00 (resultado final da tabela se tiver)
+
+PARA DEIXAR UMA TABELA RESPONSIVA PRECISA POR ELA DENTRO DA TAG <DIV>
+
+EX DE UMA TABELA RESPONSIVA COM CSS: 
+
+ <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table td, table th{
+            border: 1px solid gray;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption{
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0px;
+        }
+
+        tfoot td, table th{
+            background: #ddd;
+        }
+
+        tfoot td{
+            font-style: italic;
+        }
+
+        .responsive-table{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure consequatur necessitatibus</p>
+    <div class="responsive-table">
+    <table>
+        <thead>
+            <caption>Uma Descrição para Tabela</caption>
+            <tr>
+                <th>Titúlo 1</th>
+                <th>Titúlo 2</th>
+                <th>Titúlo 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2"></td>
+                <td rowspan="2">TOTAL: R$555,00</td>
+            </tr>
+            <tr>
+            </tr>
+        </tfoot>
+    </table>
+</div>

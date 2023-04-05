@@ -1,0 +1,39 @@
+.grid-one-content {
+  display: flex; (MAIS OPÇOÕES DE EDITAR)
+  flex-flow: column wrap; (PARA FAZER COLUNAS COM A GRID)
+  justify-content: center; (CONTEUDO SE ALINHA NO CENTRO)
+  height: 100vh; (TAMANHO DO VIEW PORT)
+}
+
+.grid-main-heading {
+  margin-bottom: 1rem; (MARGEM DO CONTEUDO)
+}
+
+.grid-description {
+  padding-bottom: 5rem; (AFASTA O CONTEUDO MAIS PRA BAIXO)
+}
+
+.grid {
+  display: grid; (TRANSFORMAR EM GRID)
+  grid-template-columns: repeat(3, 1fr); (3 GRID COM 1FR DE TAMANHO)
+  gap: var(--gap);
+  counter-reset: grid-counter; (PARA CRIAR UM CONTADOR)
+}
+
+.grid h3 {
+  font-size: 3rem; (TAMANHO DO TITULO)
+  position: relative; (PARA FAZER O CONTADOR FICAR DENTRO DO H3)
+  padding-left: 5rem; (AJUDA POSICIONAR O CONTATOR)
+  padding-bottom: 2rem; (AJUDA POSICIONAR O CONTATOR)
+}
+
+.grid h3::before {
+  counter-increment: grid-counter; (PARA POR O CONTADOR NA ONDE QUISER)
+  content: counter(grid-counter); (APARECE O CONTADOR DO LADO DO TITÚLO)
+  position: absolute; ()
+  font-size: 8rem; (TAMANHO DA FONTE)
+  font-style: italic; (FONTE ITALICA)
+  top: -4rem; (AFASTAR O CONTADOR DO TITÚLO)
+  left: -2rem; (AFASTAR O CONTADOR DO TITÚLO)
+  transform: rotate(5deg); (RODA O CONTADOR UM POUCO PRO LADO)
+}

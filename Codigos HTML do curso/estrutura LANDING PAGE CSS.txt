@@ -1,0 +1,78 @@
+SITES PARA CRIAR FUNDO DE SITE: https://www.svgbackgrounds.com/#confetti-doodles
+
+
+:root (VARIAVEIS QUE AGILIZAM MUITO) {
+--cor-primaria: #0A1128; (ATALHO COR PRINCIPAL)
+--cor-branca: #FFFFFF; (ATALHO COR BRANCA)
+--cor-secundaria: crimson;
+--light-gray-color: #EEEEEE;
+--gap: 3rem; (ESPAÇAMENTO PADRÃO DO SITE)
+}
+
+
+*{
+margin: 0;   
+padding: 0;
+(MARGIN E PADDING DO SITE TODO, CONFIG GLOBAL)
+}
+
+
+html {
+font-size: 62.5%; (TAMANHO DA FONTE DA SEÇÃO DE HTML)
+}
+
+body {
+font-family: 'Open Sans', sans-serif; (FONTE DA PARTE DO CORPO DO SITE )
+font-size: 2rem; (TAMANHO DA FONTE DAS LETRAS DO CORPO DO SITE)
+color: var(--cor-primaria); (VARIAVEL DA COR BRANCA)
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif; (FONTE DOS TITULOS DE CADA SEÇÃO DO SITE)
+}
+
+h1{
+font-size: 6rem; (TAMANHO DA FONTES DOS H1)
+text-transform: uppercase; (DEIXA TUDO MAIÚSCULO)
+}
+
+h2{
+font-size: 5.5rem; (TAMANHO DA FONTES DOS H2)
+}
+
+h3{
+font-size: 5rem; (TAMANHO DA FONTES DOS H3)
+}
+
+h4{
+font-size: 4.5rem; (TAMANHO DA FONTES DOS H4)
+}
+
+h5{
+font-size: 4rem; (TAMANHO DA FONTES DOS H5)
+}
+
+h6{
+font-size: 3.5rem; (TAMANHO DA FONTES DOS H6)
+}
+
+.main-bg (CONTEÚDO PRINCIPAL) {
+background-image: url('../img/main-bg.svg'); (CAMINHO DA IMAGEM DE FUNDO DA SEÇÃO PRINCIPAL)
+background-size: cover; (PARA O TEXTO FICAR ENCIMA DA IMAGEM DE FUNDO)
+background-position: center center; (PARA IMAGEM CENTRALIZAR CONFORME A TELA DO NAVEGADOR)
+color: var(--cor-branca); (ATALHO DA COR BRANCA OU VARIÁVEL)
+}
+
+white-bg{
+background: var(--cor-branca); (ATALHO DA COR BRANCA OU VARIÁVEL)
+}
+
+.main-content {
+max-width: 1200px; (TAMANHO MAXIMO DA TELA DO NAVEGADOR)
+margin: 0 auto; (PARA O CONTEÚDO PRINCIPAL FICAR CENTRALIZADO)
+}
+
+.section (DIVISOR DE SESSÕES){
+min-height: 100vh; (TAMANHO MINÍMO DE CADA SEÇÃO DO SITE)
+}
+

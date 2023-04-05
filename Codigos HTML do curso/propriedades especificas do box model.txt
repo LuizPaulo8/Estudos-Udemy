@@ -1,0 +1,8 @@
+overflow-auto; (tag usada para ajustar conteúdo dentro da caixa)
+
+
+max-width: ;
+max-height: ;
+min-width: ;     (TAGS QUE DEIXAM SITE RESPONSIVO)
+min-height: ;      
+margin:0 auto ; 

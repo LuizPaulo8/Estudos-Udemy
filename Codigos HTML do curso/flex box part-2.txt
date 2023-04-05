@@ -1,0 +1,2 @@
+flex-wrap: wrap; (FAZ QUEBRA DAS COLUNAS QUANDO A TELA FOR MOBILE)
+align-content: stretch (ESTICA O CONTEÚDO) 

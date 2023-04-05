@@ -1,0 +1,37 @@
+.menu-spacing {
+height: 65px; (ESPAÇAMENTO ENTRE O MENU E A SEÇÃO 1)
+
+body{
+line-height: 1.5; (DEIXA AS LINHAS UM POUCO MAIS ESPAÇADAS)
+}
+
+.menu
+z-index: 1; (TODO MUNDO FICA EMBAIXO DO MENU)
+
+intro-content (CONTEÚDO DA SEÇÃO DE INTRO) {
+  position: relative;
+  top: -8rem; (ALINHA O CONTEUDO PRA CIMA)
+  display: grid; (DEIXA O CONTEUDO EM CAIXA)
+  grid-template-columns: 1fr 1.5fr; (DIVIDE O CONTEUDO)
+  gap: var(--gap);
+  height: 100vh; (AJUDA A CENTRALIZAR O CONTEUDO DA PARTE DE BAIXO ALI)
+}
+
+.intro-text-content, .intro-img { 
+  display: flex;
+  flex-flow: column wrap;  (COMANDOS PARA CENTRALIZAR O CONTEUDO NO MEIO)
+  justify-content: center;
+}
+
+.intro-text-content h2 {
+  font-size: 6rem; (TAMANHO DA FONTE)
+  margin-bottom: 5rem; (ESPAÇO ENTRE O H2 E O CONTEUDO EMBAXIO)  (COLOCAR TUDO NA SEÇÃO DE H2 SÓ)
+  text-transform: uppercase; (DEIXAR TODO MAIUSCULO)
+  line-height: 1.2; (PRA DAR UM ESPAÇO NO H2)
+}
+
+.intro-img img,
+.intro-img svg {
+  max-width: 100%; (LARGURA MAXIMA)
+  height: auto; (SE ADEQUA AO NAVEGADOR)
+}

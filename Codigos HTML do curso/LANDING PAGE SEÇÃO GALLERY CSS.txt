@@ -1,0 +1,13 @@
+.gallery-img {
+  width: 100%; (LARGURA DO NAV)
+  max-width: 36rem; (LARGURA MAXIMA DE 36OPX)
+  max-height: 36rem; (ALTURA MÁXIMA DE 360PX)
+  overflow: hidden; (ESCONDE O OVERFLOW DAS IMAGENS)
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out; (PARA PEGAR EFEITO NELAS)
+}
+
+.gallery-img img:hover {
+  transform: translate (TRANSAÇÃO) (-3%, 3%) (FAZENDO IMAGEM DESCER E IR PRA ESQUERDA) scale(1.2) (AUMENTA OU DIMINUI TAMANHO) rotate(5deg) (DA UMA INCLINADA); ()

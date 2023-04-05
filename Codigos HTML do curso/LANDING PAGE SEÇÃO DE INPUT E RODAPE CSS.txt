@@ -1,0 +1,88 @@
+.contact-form {
+  grid-column: span 2; (DEIXA 2 COLUNAS ESTRUTURADAS)
+}
+
+.contact-form .form-grid {
+  border: none; (TIRA A BORDA)
+  display: flex; (AUMENTA AS EDIÇÕES)
+  flex-direction: row; (PARA FICAR COM A FORMA MAIS LONGA)
+  flex-wrap: wrap; (ESTRUTURA DOS FORM)
+  gap: var(--gap); ()
+}
+
+.form-grid legend {
+  font-style: italic; (DEIXA A FONTE DA LEGENDA ITALICA)
+  font-size: 1.6rem; (TAMANHO DA FONTE)
+  margin-bottom: 3rem; (AFASTA A LEGENDA DO RESTANTE DO CONTEUDO)
+}
+
+.form-group {
+  flex: 1 1 320px; (PARA MUDAR OS TAMANHOS DO FORM)
+}
+
+.form-group label {
+  display: block; (PRA DEIXAR O INPUT EMBAIXO DE LABEL)
+  margin-bottom: 1rem; (AFASTA A CAIXA DO SIGNIFICADO DELA)
+}
+
+.form-group input,
+.form-group textarea {
+  border: none; (TIRA A BORDA DO INPUT)
+  background: var(--white-color); (FUNDO BRANCO)
+  padding: 1.5rem 2rem; (CENTRALIZAR O TEXTO DENTRO DA CAIXA DO INPUT)
+  width: 100%; (DEIXA OS FORM DO TAMANHO TOTAL DO NAVEGADOR)
+  font-size: 3rem; (TAMANHO DA FONTE QUE FICA DENTRO DO INPUT)
+  outline: none; (IMPORTANTE DEIXAR ISSO AO INVES DE TIRAR)
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px 2px var(--secondary-color); (QUANDO APERTA NO INPUT FICA UMA BORDA EM VOLTA DELE)
+}
+
+.form-group button {
+  border: 0.5rem solid var(--white-color); (BORDA DO BOTÃO)
+  background: none; (TIRA O BACK)
+  color: var(--white-color); (LETRA DOQ TA ESCRITO NO BOTÃO)
+  padding: 1.5rem 2rem; (CENTRALIZA ELE)
+  font-size: 3rem; (TAMANHO DA FONT)
+  cursor: pointer; (PASSA O MOUSE VIRA UMA MÃOZINHA)
+  transition: all 300ms ease-in-out; (EFEITO QUANDO PASSA O MOUSE)
+}
+
+.form-group button:hover {
+  background: var(--white-color); (QUANDO PASSAR O MOUSE FICA BRANCO)
+  color: var(--primary-color); (QUANDO PASSAR O MOUSE A COR DO TEXTO MUDA)
+}
+
+.form-group ::placeholder {
+  color: var(--light-gray-color); (MUDA A COR DO EXEMPLO QUE FICA DENTRO DO INPUT)
+}
+
+body.full-width {
+width: 100%; (DEIXA O INPUT COM 100% DA TELA) 
+flex: 1 1 100%
+}
+
+.footer {
+  text-align: center; (ALINHAR O TEXTO NO CENTRO)
+  font-size: 1.6rem; (TAMANHO DA FONTE DO RODAPÉ)
+}
+
+.footer a {
+  color: var(--primary-color); (COR DO TEXTO DO RODAPE)
+}
+
+.heart {
+  color: var(--secondary-color); (MUDA A COR DO CORAÇÃO)
+}
+
+.footer p {
+  margin: 0; (TIRA A MARGEM DO RODAPPÉ)
+  padding: 3rem; (AFASTA RODAPÉ DO CONTEÚDO)
+}
+
+
+
+
+

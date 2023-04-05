@@ -1,0 +1,28 @@
+.responsive-table {
+  overflow: hidden; (TIRA ROLAGEM DA TABELA QUANDO DIMINUI A TELA)
+  overflow-x: auto; (DEIXA ROLAGEM DE PÉ)
+}
+
+table {
+  min-width: 360px; (PARA A TABELA NAO DIMINUIR MUITO)
+  width: 100%; (LARGURA MAXIMA DA TELA)
+  border-collapse: collapse; (PRA BORDA FICAR COLADA)
+}
+
+table caption {
+  font-style: italic; (FONTE ITALICA)
+  font-size: 1.6rem; (TAMANHO DA FONTE)
+  text-align: left; (TEXTO FICA GRUDADO NA ESQUERDA)
+  margin-bottom: 1rem; (DESTANCIA DA BORDA DEBAIXO)
+}
+
+table td, table th {
+  white-space: nowrap; (PARA NAO QUEBRAR O TEXTO DA RABELA)
+  padding: 1rem; (DISTANCIA DA PARTE DE CIMA)
+  text-align: left; (TEXTO FICA COLADO NO CANTO ESQUERDO DA TABELA)
+  border: 0.1rem solid var(--light-gray-color) (BORDA DA TABELA)
+}
+
+tfoot td, table th {
+  background: var(--light-gray-color); (FUNDO DO RODAPE DA TABELA)
+}

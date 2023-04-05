@@ -1,0 +1,1 @@
+console.log('Olá Mundo!'); /* melhor jeito de comentar os itens */

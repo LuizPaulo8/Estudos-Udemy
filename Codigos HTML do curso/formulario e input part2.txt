@@ -1,0 +1,9 @@
+input type=text id=nome name=nome placeholder=Seu nome (aparece uma expicação)
+
+<Label for"nome">NOME: (explica oq é) (tag usada antes da tag input)
+
+required significa que é obrigatório preencher os campos do site
+
+input type=radio (para marcar uma opção só)
+
+<checked> (ja vem marcado um por padrão)

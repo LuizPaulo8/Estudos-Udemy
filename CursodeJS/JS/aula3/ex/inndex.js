@@ -1,0 +1,1 @@
+console.log('Meu nome é "Luiz Paulo". Estou aprendendo JavaScript ás', 10, 'da manhã'); // Separando o número para ser considerado como numero //

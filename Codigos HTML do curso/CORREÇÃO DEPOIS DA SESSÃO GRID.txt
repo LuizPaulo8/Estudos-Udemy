@@ -1,0 +1,28 @@
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
+}
+
+.intro-content {
+  position: relative;
+  top: -8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  min-height: 100vh; (ADD ESSE)
+}
+
+.top3-content {
+  max-width: 64rem;
+  display: flex;
+  flex-flow: column wrap; (APAGA)
+  flex-direction: column; (ADD)
+  flex-wrap: nowrap; (ADD)
+
+.grid-one-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh; (APAGA)
+  min-height: 100vh; (ADD)

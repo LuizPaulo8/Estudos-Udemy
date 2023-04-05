@@ -1,0 +1,24 @@
+<form action='link direcional' method='get (o mais usado)' target='onde vai direcionar o link' autocomplete='off'
+
+<section>
+<h1> (titulo do formulario)
+<p>
+
+<fieldset>
+<legend> (descrição)
+input type="text" (tipo um formulario de login)
+
+FORMULARIO FORMADO EX1:
+
+ <form action="#" method="get" target="_blank" autocomplete="off">
+    <section>
+        <h1>Cabeça</h1>
+        <p>O Formulário</p>
+
+        <fieldset>
+            <legend>Descrição</legend>
+            <p>
+                <input type="text">
+            </p>
+        </fieldset>
+    </section>

@@ -1,0 +1,7 @@
+LI::after (Item depois do elemento) ou ::before (antes do elemento)
+
+p::first-letter {MUDA SOMENTE A PRIMEIRA LETRA}
+
+P::FIRST-LINE (PRIMEIRA LINHA DO PARAGRAFO)
+
+p::selection (QUANDO SELECIONO O TEXTO MUDA A COR)

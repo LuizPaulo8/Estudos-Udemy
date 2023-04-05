@@ -1,0 +1,59 @@
+a {
+  text-decoration: none; (TIRA O __ DOS LINKS)
+}
+
+.menu {
+  background: var(--white-color); (FUNDO BRANCO NO MENU) 
+  position: fixed; (MENU DESCE JUNTO COM A PÁGINA)
+  top: 0; (FICAR RENTE NA PARTE DE CIMA)
+  left: 0; (FICAR COLADO NA PARTE DA ESQUERDA)
+  right: 0; FICAR COLADO NA PARTE DA DIREITA)
+  width: 100%; (PRA TER 100% DA LARGURA DO VIEW PORT)
+  border-bottom: 1px solid var(--light-gray-color); (CRIANDO BORDAR EMBAIXO DO MENU)
+}
+
+.menu-content {
+  display: flex; (PARA PODER CONFIG O MENU COMO QUISERMOS)
+  justify-content: space-between; (LOGO PRO LADO ESQUERO E MENU PRO LADO DIREITO)
+  align-items: center; (PARA QUE OS ITENS SEMPRE SE ALINHEM NO CENTRO DA BOX DELES)
+  padding-top: 0; (DEIXA O MENU RENTE AO TOPO E AO CONTEUDO DE BAIXO)
+  padding-bottom: 0; (DEIXA O MENU RENTE A PARTE DE BAIXO)
+}
+
+.menu h1 {
+  font-size: 2.3rem; (TAMANHO DA FONTE DA LOGO)
+  color: var(--primary-color); (COR DA ESCRITA DA LOGO)
+}
+
+.menu h1 a {
+  color: inherit; (FAZ COM QUE O H1 PEGUE A COR QUE COLOCAMOS NA FONTE)
+}
+
+.menu ul {
+  list-style: none; (PARA TIRAR AS BOLINHAS DA LISTA)
+  display: flex; (FICA UM DO LADO DO OUTRO, AO INVÉS DE FICAR UM EMBAIXO DO OUTRO)
+}
+
+.menu ul li a {
+  display: block;
+  padding: 2rem; (DEIXA O MENU MAIS ESTREITO)
+  font-size: 1.8rem; (FONTE DAS PALAVRAS DO MENU)
+  color: var(--primary-color); (COR DAS PALAVRAS DO MENU)
+  position: relative;(PARA A COR COLOCADA NA SEÇÃO DE BAIXO FIQUE SO ENTRE OS ELEMENTOS E NAO A LARGURA TODA)
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute; (RELAÇÃO DOS LINKS COM O NAVEGADOR)
+  bottom: 1rem; (FICAR UMA COR EMBAIXO QUANDO PASSA O MOUSE)
+  left: 50%; (DEIXA A COR COM TRAÇO EMBAIXO DO LINK DO MENU)
+  width: 0; (QUANDO NAO ESTIVER COM MOUSE ENCIMA)
+  height: 0.2rem; (ALTURA DO MENU)
+  background: crimson; (COR PARA QUANDO PASSAR O MOUSE ENCIMA)
+  transition: all 300ms ease-in-out; (EFEITO EMBAIXO DO MENU QUANDO PASSA O MOUSE ENCIMA)
+}
+
+.menu ul li a:hover::after {
+  width: 50%; (QUANDO PASSA O MOUSE EFEITO PEGA SOMENTE EMBAIXO DAS PALAVRAS)
+  left: 25%;
+}

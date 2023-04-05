@@ -1,0 +1,18 @@
+<body class="main-bg">
+  <aside class="menu"> (PRIMEIRA SEÇÃO DO MENU)
+    <div class="main-content menu-content"> (BOX DO MENU)
+      <h1>
+        <a href="#">LOGO</a> (LOGO INTERATIVA OU SEJA APERTA NELA E VOLTA PRO INICIO)
+      </h1>
+
+      <nav> (TÓPICOS DO MENU)
+        <ul>
+          <li><a href="#">intro</a></li>
+          <li><a href="#">top 3</a></li>
+          <li><a href="#">gallery</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>

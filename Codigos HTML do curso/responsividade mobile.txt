@@ -1,0 +1,12 @@
+@media (max-width: 520px) {
+    .grid .col{
+    width: 100%;    
+    }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+    .grid .col{
+    width: 50%;    
+    }
+
+TAGS QUE TRAS RESPONSIVIDADE PARA O DISPOSITIVO DESEJADO 

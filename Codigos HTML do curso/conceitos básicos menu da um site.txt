@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;   (CONFIGURAÇÃO GLOBAL, EDITA TUDO DO CSS)
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; (QUANDO APERTA NO MENU O SITE DESCE DESLIZANDO)
+}
+
+body{
+    font-family: sans-serif; (FONTE DO TEXTO)
+}
+
+.grid{
+padding: 15px; (ESPAÇAMENTO DAS CAIXAS)
+max-width: 1200px; (MAXIMO DE ALTURA DO SITE)
+margin: 0 auto; (DEIXA O CONTEUDO CENTRALIZADO)
+padding-top: 73px; ( 73 PIXELS DE MARGEM DE CIMA PRA BAIXO)
+}
+
+
+.grid .col {
+    width: 33.33%; (PARA DIVIDIR EM 3 COLUNAS)
+    height: 300px; (ALTURA DAS CAIXAS DE 300PX)
+    float: left; (FAZ ELAS IREM DA ESQUERDA PARA DIREITA)
+    padding: 15px; (ESPAÇAMENTO DAS CAIXAS)
+}
+
+.grid::after{
+    content: '';
+    display: block; (PARA AJUSTAR UM DO LADO DO OUTRO)
+    clear: both;
+}
+
+.grid .col-content {
+    width: 100%; (LARGURA DE 100% DA TELA DO NAVEGADOR)
+    height: 100%; (ALTURA DE 100% DA TELA DO NAVEGADOR)
+    background: green; (COR DOS ELEMENTOS)
+    border-radius: 5px (PARA DEIXA UM QUADRADO COM AS PONTAS RENDONDINHAS)
+	
+}
+
+.menu{
+    width: 100%; (100% DE LARGURA DE TELA)
+    position: fixed; (FICA FIXA NO LUGAR MESMO QUE ROLE A TELA, 
+ELA TAMBEM ROLA))
+    background: rgba(0, 0, 0, 0.842);
+}
+
+.menu ul{
+    list-style: none; (ESTILO DA LISTA)
+    display: block; (FAZ AS COISAS FICAR UM DO LADO DA OUTRA)
+    max-width: 1200px;(MAX DE PX PRO NAVEGADOR É ISSO)
+    padding: 0 30px; (ESPAÇAMENTO DAS COISAS VENDO ISSO)
+    max-width: 1200px;
+    margin: 0 auto; (PARA TUDO SE ALINHA AO MEIO)
+}
+
+.menu ul li{
+    float: left; (FEZ ALINHAR DA ESQUERDA PARA DIREITA
+}
+
+.menu ul li a{
+    display: block; (FAZ AS COISAS FICAR UM DO LADO DA OUTRA)
+    color: #fff;
+    padding: 20px; (DISTACIAMENTO)
+    text-decoration: none; (TIRA O U DERLINE DEBAIXO DAS FRASES)
+    transition: all 0.3s ease-in-out; (QUANDO PASSA O MOUSE LEVA 0.3 SEGUNDOS PARA MUDAR A COR DO TAPETE POR EXEMPLO)
+}
+
+.menu ul li a:hover{
+    background: #333; (COR QUE VC QUER QUE FIQUE QUANDO PASSAR O MOUSE NO MENU)
+}
+
+.full-page{
+    max-width: 100%; (LARGURA MAXIMA DA TELA DO NAVEGADOR)
+    padding: 0 30px; (MESMA MEDIDA DO GRID PARA ALINHAR AS LETRAS NA MESMA RETA)
+    margin: 0 auto;  (PARA TUDO SE ALINHA AO MEIO)
+    padding-top: 73px; (MEDIDA IDEAL DO TOPO DO SITE E NAVEGADOR)
+    height: 100vh; (MEDIDA EM VH NA PARTE DA ALTURA)
+    background: turquoise;
+}
+
+.full-page-content{
+    max-width: 1200px; (LARGURA DE 1.200PX DA TELA DO NAVEGADOR)
+    padding: 0 30px; (PARA ALINHAR MENU COM AS CAIXA GRID)
+    margin: 0 auto; (PARA TUDO SE ALINHA AO MEIO)
+}
+
+
+RESPONSIVIDADE ABAIXO
+
+@media all and (max-width: 520px) {
+    .grid .col{
+    width: 100%;    
+    }
+}
+
+@media all and (min-width: 521px) and (max-width: 768px) {
+    .grid .col{
+    width: 50%;    
+    }
+}
+
+@media all and (min-width: 522px) and (max-width: 1200px) {
+    .grid .col{
+    width: 33.33%;    
+    }
+}

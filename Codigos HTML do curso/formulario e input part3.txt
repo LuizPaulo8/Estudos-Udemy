@@ -1,0 +1,22 @@
+FORMULARIO DE DATA
+<label for="Data">Data:</label>
+
+<input type="date" id="data" name="data" value="2022-04-20">
+
+
+FORMMULARIO DE HORA
+<label for="Tempo">Tempo:</label>
+<input type="time" id="Tempo" name="Tempo" value="20:30:25">
+
+
+FORMULARIO DE COR
+<label for="Cor">Cor Preferida:</label>
+<input type="color" id="Cor" name="Cor" value="#ffffff">
+
+FORMULARIO DE EMAIL
+ <label for="email">Seu e-mail:</label>
+ <input type="email" id="email" name="email" placeholder="ex: email@email.com">
+
+FORMULARIO DE NUMERO
+ <label for="Número">Seu número</label>
+ <input type="number" id="Número" name="Número" placeholder="Digite um numero" min="1" max="20" step="2 (pula de 2 em 2 os numeros)">
